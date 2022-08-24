@@ -1,0 +1,12 @@
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginRight="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maskgroup1"
+        android:id="@+id/user1"
+      />
+
+</LinearLayout>

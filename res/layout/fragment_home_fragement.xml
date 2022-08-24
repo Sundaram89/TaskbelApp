@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_group_1779" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-2dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Block A, Santacruz Mumbai"
+            android:textColor="#262222"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_corner">
+
+        <SearchView
+            android:id="@+id/idSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@null"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search for services and packages." />
+    </LinearLayout>
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:baselineAligned="false"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="5"
+        app:iss_delay="0"
+        app:iss_error_image="@android:color/darker_gray"
+        app:iss_period="1000"
+        app:iss_placeholder="@android:color/darker_gray"
+        app:iss_selected_dot="@drawable/default_selected_dot"
+        app:iss_unselected_dot="@drawable/default_unselected_dot"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textColor="#000000"
+        android:fontFamily="@font/roboto_medium"
+        android:textFontWeight="500"
+        android:textSize="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+    <GridView
+        android:id="@+id/nearest_resturant"
+        android:layout_width="match_parent"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textFontWeight="600"
+        android:text="Best Worker In The
+Communities"
+        android:lineHeight="30dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nearest_resturant1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearest_resturant_title"
+        tools:listitem="@layout/cumminty" />
+</LinearLayout>
